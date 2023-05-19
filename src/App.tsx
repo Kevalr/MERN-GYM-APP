@@ -1,8 +1,9 @@
 import Navbar from "@/scenes/navbar";
-import Home from "./scenes/home";
-import Benifits from "./scenes/benifits";
-import OurClasses from "./scenes/ourclasses";
-import ContactUs from "./scenes/contactUs";
+import Home from "@/scenes/home";
+import Benifits from "@/scenes/benifits";
+import OurClasses from "@/scenes/ourclasses";
+import ContactUs from "@/scenes/contactUs";
+import Footer from "@/scenes/footer";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 
@@ -36,6 +37,7 @@ function App() {
       <Benifits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
